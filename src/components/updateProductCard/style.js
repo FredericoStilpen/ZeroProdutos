@@ -16,14 +16,17 @@ export const ContainerInf = styled.View`
   justify-content: space-between;
   flex: 1;
 `;
+
 export const ContainerName = styled.View`
   height: 50px;
   background: #c4c4c4;
 `;
+
 export const ContainerPrice = styled.View`
   background: #c4c4c4;
   height: 50px;
 `;
+
 export const ContainerDesc = styled.View`
   height: 50px;
   background: #c4c4c4;
@@ -34,12 +37,14 @@ export const ContainerBot = styled.View`
   flex-direction: row;
   margin: 17px 20px 0px 20px;
 `;
+
 export const ContainerStock = styled.View`
   background: #c4c4c4;
   height: 50px;
   width: 180px;
   margin: 0px 20px 0px 0px;
 `;
+
 export const ContainerCategory = styled.View`
   background: #c4c4c4;
   height: 50px;

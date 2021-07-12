@@ -8,11 +8,20 @@ export const Container = styled.View`
   padding: 5px;
   justify-content: center;
   align-self: center;
-  background-color: #E04129;
+  background-color: #00ce8e;
 `;
 
 export const Button = styled.TouchableHighlight`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const Text = styled.Text`
+
+`;
+
+export const ContainerBack = styled.View`
+    flex:1;
+    background-color: #b9ffcd;
 `;

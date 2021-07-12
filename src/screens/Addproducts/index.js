@@ -1,14 +1,15 @@
 import React, { useState, useEffect, createContext } from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 import ProdContext from "../../context";
 
 import AddProductCard from "../../components/addProductCard";
-import SubmitButton from "../../components/submitButton";
-
+import { Container, Button, ContainerBack } from "./style";
 import notFound from "../../../assets/images/notFound.jpg";
 
 import api from "../../services/api";
+
+import { LinearGradient } from 'expo-linear-gradient';
 
 const AddProducts = (navigation) => {
   const [categorias, setCategorias] = useState([]);
@@ -52,7 +53,7 @@ const AddProducts = (navigation) => {
     else {
       try {
         await api.post("/produto", produto);
-        alert("Produto Adicionado com Sucesso");
+        alert("Produto Adicionado");
         setProduto(initialState);
       } catch (error) {
         alert("Erro no acesso a API");
@@ -62,15 +63,22 @@ const AddProducts = (navigation) => {
 
   return (
     <>
-      <ScrollView>
-        <ProdContext.Provider value={{ produto, setProduto, categorias }}>
-          <AddProductCard />
-        </ProdContext.Provider>
-        <TouchableOpacity onPress={handleAddProduct}>
-          <SubmitButton />
-        </TouchableOpacity>
-        <View style={{ height: 20 }} />
-      </ScrollView>
+      <ContainerBack>
+        <LinearGradient
+          colors={['rgba(106,185,130,1)', 'transparent']}>
+          <ProdContext.Provider value={{ produto, setProduto, categorias }}>
+            <AddProductCard/>
+          </ProdContext.Provider>
+          <TouchableOpacity onPress={handleAddProduct}>
+            <Container>
+              <Button>
+                <Text style={{ fontSize: 20, color: 'white' }}>Adicionar</Text>
+              </Button>
+            </Container>
+          </TouchableOpacity>
+          <View style={{ height: 20 }} />
+        </LinearGradient>
+      </ContainerBack>
     </>
   );
 };

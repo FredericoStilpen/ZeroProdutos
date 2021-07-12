@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Picker } from '@react-native-community/picker';
 import api from "../../services/api";
 import notFound from "../../../assets/images/image-not-found.jpg";
-import SubmitButton from "../../components/submitButton";
-import DeleteButton from "../../components/deleteButton";
 
 import {
   ContainerTop,
@@ -15,12 +13,18 @@ import {
   ContainerPrice,
   ContainerDesc,
   ContainerCategory,
+  ContainerDelete,
   Input,
   InputDesc,
   InputCat,
+  Text,
+  Button,
+  Container,
+  ContainerBack
 } from "./style";
-import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import { View } from "react-native";
+import { LinearGradient } from 'expo-linear-gradient';
 
 const Update = ({ route, navigation }) => {
   const [produto, setProduto] = useState();
@@ -64,7 +68,7 @@ const Update = ({ route, navigation }) => {
     if (produto.valor < 0 || produto.qtdEstoque < 0) {
       alert('Valor e Estoque não podem ser negativos')
     }
-    else{
+    else {
       try {
         await api.put(`/produto/${id}`, produto);
         navigation.replace('Home');
@@ -103,7 +107,11 @@ const Update = ({ route, navigation }) => {
 
   return (
     <>
-      <ScrollView>
+      
+      <ContainerBack>
+      <LinearGradient
+          colors = {['rgba(106,185,130,1)','transparent']}>
+         
         <ContainerTop>
           <ContainerImg source={foto} onError={addDefaultImg}></ContainerImg>
           <ContainerInf>
@@ -167,16 +175,24 @@ const Update = ({ route, navigation }) => {
           }}
         >
           <TouchableOpacity onPress={handleUpdateProduct}>
-            <SubmitButton />
+            <Container>
+              <Button>
+                <Text style={{fontSize: 20, color: 'white' }}> Atualizar</Text>
+              </Button>
+            </Container>
           </TouchableOpacity>
           <View style={{ width: 20 }} />
           <TouchableOpacity onPress={handleDelete}>
-            <DeleteButton />
+            <ContainerDelete>
+              <Button>
+                <Text style={{ fontSize: 20, color: 'white' }}> Deletar </Text>
+              </Button>
+            </ContainerDelete>
           </TouchableOpacity>
         </View>
-      </ScrollView>
+        </LinearGradient>
+        </ContainerBack>
     </>
   );
 };
-
 export default Update;

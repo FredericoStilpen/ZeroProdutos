@@ -1,59 +1,64 @@
 
 import React, { useState } from 'react';
-import SubmitButton from '../../components/submitButton'
+import { ImageBackground } from 'react-native';
 
 import {
   Container,
   ContainerLog,
   TextHeader,
   TextLog,
-  ContainerBody
+  ContainerBody,
+  ContainerView,
+  Text,
+  Button
 } from './style'
 import Usuario from '../../services/database'
 
-import {criaTabela, funcao} from '../../services/database'
+import { criaTabela, funcao } from '../../services/database'
 import { TouchableOpacity } from 'react-native-gesture-handler';
-const Login= ({navigation}) => {
-  const[login,setLogin]=useState('')
-  const[password,setPassword]=useState('')
- 
+
+const Login = ({ navigation }) => {
+  const [login, setLogin] = useState('')
+  const [password, setPassword] = useState('')
+
   criaTabela();
   funcao();
-  const validacao=async()=>{
-     
+  const validacao = async () => {
+
     const id = 0
-const usuario = await Usuario.find(id)
-if(login==usuario.login && password==usuario.password){
-  alert("logado")
- navigation.navigate('Home')
- setLogin('');
- setPassword('')
+    const usuario = await Usuario.find(id)
+    if (login == usuario.login && password == usuario.password) {
+      alert("logado")
+      navigation.navigate('Home')
+      setLogin('');
+      setPassword('')
 
-}else{
-  alert("nao logado")
-}
+    } else {
+      alert("nao logado")
+    }
 
-
-
-
-console.log({usuario}, "usuario aqui")
+    console.log({ usuario }, "usuario aqui")
   }
 
   return (
-    
+
+    <ImageBackground source={require('../../../assets/images/abacateNaMao.jpg')} resizeMode="cover" style={{ flex: 1, justifyContent: "center" }}>
       <Container>
         <ContainerLog>
-          <TextHeader>Usuario:</TextHeader>
-          <TextLog value={login} onChangeText={text=>setLogin(text)}  ></TextLog>
+          <TextHeader>Usuário:</TextHeader>
+          <TextLog value={login} onChangeText={text => setLogin(text)}  ></TextLog>
           <TextHeader>Senha:</TextHeader>
-          <TextLog value={password} onChangeText={text=>setPassword(text)} secureTextEntry={true}  ></TextLog>
+          <TextLog value={password} onChangeText={text => setPassword(text)} secureTextEntry={true}></TextLog>
           <TouchableOpacity onPress={validacao}>
-          <SubmitButton />
+            <ContainerView>
+              <Button>
+                <Text style={{ fontSize: 20, color: 'white' }}>Entrar</Text>
+              </Button>
+            </ContainerView>
           </TouchableOpacity>
         </ContainerLog>
       </Container>
-     
-    
+    </ImageBackground>
   );
 };
 

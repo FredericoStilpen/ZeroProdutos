@@ -18,15 +18,15 @@ export const ContainerInf = styled.View`
 `;
 export const ContainerName = styled.View`
   height: 50px;
-  background: #c4c4c4;
+  background: #fff;
 `;
 export const ContainerPrice = styled.View`
-  background: #c4c4c4;
+  background: #fff;
   height: 50px;
 `;
 export const ContainerDesc = styled.View`
   height: 50px;
-  background: #c4c4c4;
+  background: #fff;
 `;
 
 export const ContainerBot = styled.View`
@@ -35,13 +35,13 @@ export const ContainerBot = styled.View`
   margin: 17px 20px 0px 20px;
 `;
 export const ContainerStock = styled.View`
-  background: #c4c4c4;
+  background: #fff;
   height: 50px;
   width: 180px;
   margin: 0px 20px 0px 0px;
 `;
 export const ContainerCategory = styled.View`
-  background: #c4c4c4;
+  background: #fff;
   height: 50px;
   flex: 1;
 `;

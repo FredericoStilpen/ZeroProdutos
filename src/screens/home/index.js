@@ -19,7 +19,6 @@ const Home = ({ navigation }) => {
       let isActive = true;
       const handleListProduct = async () => {
 
-
         try {
           if (isActive) {
             const response = await api.get('/produto');
