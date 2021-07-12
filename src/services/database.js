@@ -39,5 +39,4 @@ export default class Usuario extends BaseModel{
             password:{type: types.TEXT,not_null:true}
         }
     }
-
 }
