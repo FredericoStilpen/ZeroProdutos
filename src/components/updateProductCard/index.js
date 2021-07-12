@@ -33,7 +33,7 @@ const UpdateProductCard = (produto) => {
   return (
     <>
       <ContainerTop>
-        <ContainerImg source={{uri: produto?.fotoLink}} ></ContainerImg>
+        <ContainerImg source={{uri: produto?.fotoLink}}></ContainerImg>
         <ContainerInf>
           <ContainerName>
             <Text>{produto?.nome}</Text>

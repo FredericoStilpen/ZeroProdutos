@@ -14,8 +14,9 @@ export const Logo = styled.View`
 `;
 
 export const ImageLogo = styled.Image`
-  height: 50px;
-  width: 50px;
+  width: 300px;
+  margin-left:40px;
+  
 `;
 
 export const HeaderText = styled.Text`

@@ -1,20 +1,19 @@
 import styled from "styled-components/native";
-import {LinearGradient} from 'expo-linear-gradient'
 
 export const Container = styled.View`
 flex: 1;
+flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: #6ab982; //fundo tela de login
-
 `;
 
 export const ContainerLog = styled.View`
 display: flex;
 justify-content: center;
-width: 350px;
+width: 250px;
 height:300px;
-background-color: #fff; //fundo box de login
+background-color: rgba(255,255,255,0.4);
+border-radius:10;
 `;
 
 export const TextHeader = styled.Text`
@@ -26,4 +25,24 @@ export const TextLog = styled.TextInput`
 font-size: 20px;
 margin: 10px;
 border-bottom-width: 1px;
+`;
+
+export const ContainerView = styled.View`
+  display: flex;
+  margin-top: 40px;
+  width: 100px;
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-self: center;
+  background-color: #00ce8e;
+`;
+
+export const Button = styled.TouchableHighlight`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Text = styled.Text`
 `;

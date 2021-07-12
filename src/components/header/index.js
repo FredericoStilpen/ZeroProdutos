@@ -6,9 +6,8 @@ const Header = () => {
   return (
     <Container>
       <Logo>
-        <ImageLogo resizeMode="contain" source={require("./zeroLogo.png")} />
+        <ImageLogo resizeMode="contain" source={require("../../../assets/splash/splash-branco.png")} />
       </Logo>
-        <HeaderText>Zero App</HeaderText>
     </Container>
   );
 };

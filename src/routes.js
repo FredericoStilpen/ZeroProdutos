@@ -1,7 +1,7 @@
 import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons";
+import {createStackNavigator } from "@react-navigation/stack";
+import {createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import {MaterialIcons, MaterialCommunityIcons} from "@expo/vector-icons";
 import Home from "./screens/home";
 import Update from "./screens/updateProduct";
 import AddProducts from "./screens/Addproducts";
@@ -14,7 +14,8 @@ const StackNav = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
-      <Stack.Screen name="Update" component={Update} />
+      <Stack.Screen name="Update" component={Update}/>
+      <Stack.Screen name="Adicionar Produtos" component={AddProducts}/>
     </Stack.Navigator>
   );
 };
@@ -34,20 +35,19 @@ const Navigation = () => {
         },
         labelStyle: {
           fontSize: 16,
-          fontWeight: "bold",
+          fontWeight: "bold"
         },
-        activeTintColor: "#000",
-        inactiveTintColor: "#555",
+        activeTintColor: "#d6d6d6",
+        inactiveTintColor: "#fff",
       }}
     >
-      
       <Tab.Screen
         name="Logout"
         component={Login}
         options={{
-          tabBarIcon: ({ color }) => {
+          tabBarIcon: ({color}) => {
 
-            return <MaterialCommunityIcons name="logout" size={24} color={color} />
+            return <MaterialCommunityIcons name="logout" size={24} color= {color} />
           },tabBarVisible:false
 
         }}
@@ -58,7 +58,7 @@ const Navigation = () => {
         component={StackNav}
         options={{
           tabBarIcon: ({ color }) => {
-            return <MaterialCommunityIcons name="home-assistant" size={28} color={color} />;
+            return <MaterialCommunityIcons name="home-assistant" size={28} color={color}/>;
           },
         }}
       />
@@ -66,9 +66,9 @@ const Navigation = () => {
         name="Add Products"
         component={AddProducts}
         options={{
-          tabBarIcon: ({ color }) => {
+          tabBarIcon: ({color}) => {
             return (
-              <MaterialIcons name="playlist-add" size={28} color={color} />
+              <MaterialIcons name="playlist-add" size={28} color = {color}/>
             );
           },
         }}
