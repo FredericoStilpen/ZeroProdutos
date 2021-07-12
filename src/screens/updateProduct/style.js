@@ -11,6 +11,7 @@ export const ContainerTop = styled.View`
   flex-direction: row;
   margin: 20px 20px 0px 20px;
 `;
+
 export const ContainerImg = styled.Image`
   margin: 0px 20px 0px 0px;
   width: 180px;
@@ -22,14 +23,17 @@ export const ContainerInf = styled.View`
   justify-content: space-between;
   flex: 1;
 `;
+
 export const ContainerName = styled.View`
   height: 50px;
   background: #fff;
 `;
+
 export const ContainerPrice = styled.View`
   background: #fff;
   height: 50px;
 `;
+
 export const ContainerDesc = styled.View`
   height: 50px;
   background: #fff;
@@ -40,12 +44,14 @@ export const ContainerBot = styled.View`
   flex-direction: row;
   margin: 17px 20px 0px 20px;
 `;
+
 export const ContainerStock = styled.View`
   background: #fff;
   height: 50px;
   width: 180px;
   margin: 0px 20px 0px 0px;
 `;
+
 export const ContainerCategory = styled.View`
   background: #fff;
   height: 50px;
@@ -100,4 +106,3 @@ export const Button = styled.TouchableHighlight`
 
 export const Text = styled.Text`
 `;
-

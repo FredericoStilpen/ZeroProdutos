@@ -31,7 +31,9 @@ const Navigation = () => {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#6ab982",
-          height: 70,
+          height: 50,
+          paddingTop: 10,
+          paddingBottom: 2,
         },
         labelStyle: {
           fontSize: 16,
@@ -63,7 +65,7 @@ const Navigation = () => {
         }}
       />
       <Tab.Screen
-        name="Add Products"
+        name="Add Productos"
         component={AddProducts}
         options={{
           tabBarIcon: ({color}) => {

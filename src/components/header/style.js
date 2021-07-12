@@ -2,7 +2,6 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
   padding: 20px;
-  display: flex;
   align-items: center;
   background-color: #6ab982;
   flex-direction: row;
@@ -15,13 +14,5 @@ export const Logo = styled.View`
 
 export const ImageLogo = styled.Image`
   width: 300px;
-  margin-left:40px;
-  
-`;
-
-export const HeaderText = styled.Text`
-  font-weight: bold;
-  font-size: 36px;
-  flex: 1;
-  justify-content: center;
+  margin-left: 35px;
 `;
