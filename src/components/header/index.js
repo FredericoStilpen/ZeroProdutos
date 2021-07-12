@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Container, Logo, ImageLogo, HeaderText } from "./style";
+import {Container, Logo, ImageLogo } from "./style";
 
 const Header = () => {
   return (
