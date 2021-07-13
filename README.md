@@ -15,6 +15,15 @@
   ## 🥑    Projeto Final
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ZEROPRODUTOS**    [*(Enunciado)*](./assets/doc.md)
 
+<details>
+  <summary>Pré-requisitos do trabalho:</summary>
+    <h4>
+      <p align="justify">
+        CRUD - (GETbyID, GETALL, POST, PUT, DELETE) Usabilidade Organização do Código Navegação - (Stack Navigation) Apresentação.
+      </p>
+    </h4>
+</details> 
+
 #### Usuários teste
 * Cliente:
   - user: admin
