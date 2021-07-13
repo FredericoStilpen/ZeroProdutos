@@ -47,8 +47,9 @@ Sambando na cara das inimigas desde 2021
 </div>
 </br>
 <div align="center">
-  <img height="400px" href="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/osZeressemosProTeam.png"> 
+  <img height="400px" src="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/osZeressemosProTeam.png"> 
 </div>
+
 <table>
   <tr>
     <td align="center">
