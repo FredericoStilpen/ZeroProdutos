@@ -16,13 +16,25 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ZEROPRODUTOS**    [*(Enunciado)*](./assets/doc.md)
 
 <details>
-  <summary>Pré-requisitos do trabalho:</summary>
-    <h4>
+  <summary>✔️ Pré-requisitos do trabalho:</summary>
       <p align="justify">
         CRUD - (GETbyID, GETALL, POST, PUT, DELETE) Usabilidade Organização do Código Navegação - (Stack Navigation) Apresentação.
       </p>
-    </h4>
-</details> 
+  </details> 
+  <details>
+  <summary>✔👮 Obrigatório:</summary>
+      <p align="justify">
+        Requisições HTTP - (CRUD) Navegação - (Stack Navigation) Uso de Hooks - (No mínimo os básicos: useState, useEffect, useContext) Reaproveitamento de componentes (Ex: Buttons, Inputs etc)
+      </p>
+  </details>
+   <details>
+  <summary>⚡️ Desafios:</summary>
+      <p align="justify">
+        SplashScreen<br> 
+        Responsividade - (No mínimo celular deitado)<br> 
+        Navegação - (Usar outro tipo de navegação sem ser a Stack)<br>
+      </p>
+  </details>  
 
 #### Usuários teste
 * Cliente:
