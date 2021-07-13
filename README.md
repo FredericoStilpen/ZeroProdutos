@@ -13,8 +13,7 @@
   </br>
 
   ## 🥑    Projeto Final
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ZEROCOMMERCE**    [*(Enunciado)*](./public/assets/readme/enunciadoProjetoFinal.pdf)
- * [**Site**](https://zerocommerce-web.herokuapp.com/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ZEROPRODUTOS**    [*(Enunciado)*](./assets/doc.md)
 
 #### Usuários teste
 * Cliente:
