@@ -18,26 +18,22 @@
 
 #### Usuários teste
 * Cliente:
-  - email: ester@email.com
-  - senha(CPF): 60530582031
-* Funcionário:
-  - nome: Antonio Elias Barbosa
-  - senha(CPF): 88955429088
-###### *Para outros usuários e funcionários, consultar API.* 
+  - user: admin
+  - senha: zero
+###### *Para outros usuários, consultar API.* 
 
 ## 🍃    API Consumida
- * [**ZeroCommerceAPI**](https://api-zerocommerce.herokuapp.com/)    (*Usar endpoint*)
- * [**Documentação Swagger**](https://api-zerocommerce.herokuapp.com/swagger-ui.html)
-
-## <img height="45px" align="center" src="./public/assets/readme/stockrocketgif.gif">    Tecnologia Utilizada
+ * [**Avocado API**](https://api-avocado.herokuapp.com/)   
+ 
+## <img height="45px" align="center" href="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/stockrocketgif.gif">    Tecnologia Utilizada
 - [**Axios**](https://www.npmjs.com/package/react-axios)    [(*Documentação*)](https://www.npmjs.com/package/react-axios)
 - [**CSS**](https://www.w3.org/Style/CSS/)    [(*Documentação MDN*)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-- [**HTML5**](https://html.spec.whatwg.org/)    [(*Documentação MDN*)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [**Expo**](https://docs.expo.io/)    [(*Documentação*)](https://docs.expo.io/guides/)
 - [**JavaScript**](https://www.javascript.com/)    [(*Documentação MDN*)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [**npm**](https://www.npmjs.com/)    [(*Documentação*)](https://docs.npmjs.com/)
-- [**React**](https://pt-br.reactjs.org/)    [*(Documentação)*](https://pt-br.reactjs.org/docs/getting-started.html)    [(*Documentação MDN*)](https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
-- [**TypeScript**](https://www.typescriptlang.org/)    [*(Documentação)*](https://www.typescriptlang.org/docs/)
+- [**React Native**](https://reactnative.dev/)    [*(Documentação)*](https://reactnative.dev/docs/getting-started)    [(*Documentação MDN*)](https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
+- [**React Navigation**](https://reactnavigation.org/)    [(*Documentação*)](https://reactnavigation.org/docs/getting-started/)
 - [**Visual Studio Code**](https://code.visualstudio.com/)    [*(Documentação)*](https://code.visualstudio.com/docs)
+ - [**Yarn**](https://yarnpkg.com/)    [(*Documentação*)](https://yarnpkg.com/getting-started) 
 <br> 
 <div align="center">
 © 2021 Copyright: zeressemos.com
