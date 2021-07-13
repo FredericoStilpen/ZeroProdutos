@@ -25,7 +25,7 @@
 ## 🍃    API Consumida
  * [**Avocado API**](https://api-avocado.herokuapp.com/)   
  
-## <img height="45px" align="center" href="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/stockrocketgif.gif">    Tecnologia Utilizada
+## <img height="45px" align="center" src="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/stockrocketgif.gif">    Tecnologia Utilizada
 - [**Axios**](https://www.npmjs.com/package/react-axios)    [(*Documentação*)](https://www.npmjs.com/package/react-axios)
 - [**CSS**](https://www.w3.org/Style/CSS/)    [(*Documentação MDN*)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [**Expo**](https://docs.expo.io/)    [(*Documentação*)](https://docs.expo.io/guides/)
