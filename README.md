@@ -22,7 +22,7 @@
       </p>
   </details> 
   <details>
-  <summary>✔👮 Obrigatório:</summary>
+  <summary>👮 Obrigatório:</summary>
       <p align="justify">
         Requisições HTTP - (CRUD) Navegação - (Stack Navigation) Uso de Hooks - (No mínimo os básicos: useState, useEffect, useContext) Reaproveitamento de componentes (Ex: Buttons, Inputs etc)
       </p>
