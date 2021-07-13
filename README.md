@@ -1,6 +1,7 @@
 <div align="center">
 <i><h6>Projeto final feito pelo grupo Zeréssimos como requisito parcial da disciplina Desenvolvimento Web, da Residência de Software do Serratec.</h6></i>
 </div>
+<a name="back-to-top">
 
 ![](./assets/images/logoTopReadme.png)
 
@@ -11,8 +12,7 @@
   </p> 
   </br>
 
-
-  ## 🛍️    Projeto Final
+  ## 🥑    Projeto Final
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**ZEROCOMMERCE**    [*(Enunciado)*](./public/assets/readme/enunciadoProjetoFinal.pdf)
  * [**Site**](https://zerocommerce-web.herokuapp.com/)
 
@@ -23,7 +23,8 @@
 ###### *Para outros usuários, consultar API.* 
 
 ## 🍃    API Consumida
- * [**Avocado API**](https://api-avocado.herokuapp.com/)   
+ * [**Avocado API**](https://api-avocado.herokuapp.com/)
+ <br>   
  
 ## <img height="45px" align="center" src="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/stockrocketgif.gif">    Tecnologia Utilizada
 - [**Axios**](https://www.npmjs.com/package/react-axios)    [(*Documentação*)](https://www.npmjs.com/package/react-axios)
@@ -45,7 +46,6 @@ Sambando na cara das inimigas desde 2021
 <div align="center">
   <img height="400px" src="https://github.com/marcosbarker/serratec.residencia/blob/main/assets/osZeressemosProTeam.png"> 
 </div>
-
 <table>
   <tr>
     <td align="center">
@@ -97,3 +97,6 @@ Sambando na cara das inimigas desde 2021
       </a><br>
     </td>
 </table>
+</br>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;⬆️[**Back to top**](#back-to-top)⬆️
