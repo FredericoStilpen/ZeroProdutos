@@ -40,7 +40,7 @@ const AddProductCard = () => {
         <ContainerImg source={notFound}></ContainerImg>
         <ContainerInf>
           <ContainerName>
-            <Input placeholder="Name" defaultValue={produto.nome}
+            <Input placeholder="Nome" defaultValue={produto.nome}
               onChangeText={text => setProduto({ ...produto, nome: text })} />
           </ContainerName>
           <ContainerPrice>
@@ -59,14 +59,14 @@ const AddProductCard = () => {
         <ContainerStock>
           <Input placeholder="Estoque" defaultValue={produto?.qtdEstoque.toString()}
             keyboardType='numeric'
-            onChangeText={text => setProduto({ ...produto, qtdEstoque: safeParseInt(text) })} />
+            onChangeText={text => setProduto({...produto, qtdEstoque: safeParseInt(text) })} />
         </ContainerStock>
         <ContainerCategory>
           <Picker selectedValue={produto.idCategoria}
-            onValueChange={itemValue => setProduto({ ...produto, idCategoria: itemValue })} >
+            onValueChange={itemValue => setProduto({...produto, idCategoria: itemValue })} >
              <Picker.Item label="Selecione uma categoria" value={null} disabled />
-            {categorias.map(cat => {
-              return <Picker.Item key={cat.id} label={cat.nome} value={cat.id} />
+                {categorias.map(cat => {
+              return <Picker.Item key={cat.id} label={cat.nome} value={cat.id}/>
             })}
           </Picker>
         </ContainerCategory>

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ImageBackground } from 'react-native';
+import {ImageBackground, KeyboardAvoidingView} from 'react-native';
 
 import {
   Container,
@@ -10,7 +10,7 @@ import {
   ContainerBody,
   ContainerView,
   Text,
-  Button
+  Button,
 } from './style'
 import Usuario from '../../services/database'
 
@@ -28,31 +28,30 @@ const Login = ({ navigation }) => {
     const id = 0
     const usuario = await Usuario.find(id)
     if (login == usuario.login && password == usuario.password) {
-      alert("logado")
+      alert("Bem-Vindo a ZeroProdutos")
       navigation.navigate('Home')
       setLogin('');
       setPassword('')
 
     } else {
-      alert("nao logado")
+      alert("Digite seus dados!")
     }
 
-    console.log({ usuario }, "usuario aqui")
   }
 
   return (
 
-    <ImageBackground source={require('../../../assets/images/abacateNaMao.jpg')} resizeMode="cover" style={{ flex: 1, justifyContent: "center" }}>
-      <Container>
+    <ImageBackground source={require('../../../assets/images/abacateNaMao.jpg')} resizeMode="cover" style={{flex: 1, justifyContent: "center" }}>
+       <Container>
         <ContainerLog>
           <TextHeader>Usuário:</TextHeader>
-          <TextLog value={login} onChangeText={text => setLogin(text)}  ></TextLog>
+          <TextLog value={login} onChangeText={text => setLogin(text)}></TextLog>
           <TextHeader>Senha:</TextHeader>
           <TextLog value={password} onChangeText={text => setPassword(text)} secureTextEntry={true}></TextLog>
           <TouchableOpacity onPress={validacao}>
             <ContainerView>
               <Button>
-                <Text style={{ fontSize: 20, color: 'white' }}>Entrar</Text>
+                <Text style={{ fontSize: 20, color: 'white' }}> Entrar</Text>
               </Button>
             </ContainerView>
           </TouchableOpacity>

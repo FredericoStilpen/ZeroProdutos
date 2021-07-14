@@ -15,13 +15,14 @@ const StackNav = () => {
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
       <Stack.Screen name="Update" component={Update}/>
-      <Stack.Screen name="Adicionar Produtos" component={AddProducts}/>
     </Stack.Navigator>
   );
 };
 
 const Navigation = () => {
+  
   return (
+    
     <Tab.Navigator
       screenOptions={{headerShown: false }}
       inicialRouteName="Home"
@@ -48,10 +49,8 @@ const Navigation = () => {
         component={Login}
         options={{
           tabBarIcon: ({color}) => {
-
             return <MaterialCommunityIcons name="logout" size={24} color= {color} />
           },tabBarVisible:false
-
         }}
         
       />
@@ -65,7 +64,7 @@ const Navigation = () => {
         }}
       />
       <Tab.Screen
-        name="Add Productos"
+        name="Incluir Produtos"
         component={AddProducts}
         options={{
           tabBarIcon: ({color}) => {
@@ -78,5 +77,4 @@ const Navigation = () => {
     </Tab.Navigator>
   );
 };
-
 export default Navigation;
